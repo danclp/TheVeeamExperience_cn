@@ -39,7 +39,7 @@ function enableScroll() {
     scrollTrigger: {
       trigger: '.pageWrap',
       start: 'top top',
-      end: 'clamp(+=30000)',
+      end: 'clamp(+=60000)',
       pin: true,
       scrub: true
     }
