@@ -51,6 +51,7 @@ function enableScroll() {
     })
     .to('.home_content-message > *', {
       xPercent: -100,
+      opacity: 0,
       stagger: 0.3
     }, 0)
     .to('.scroll_down p', {
@@ -79,6 +80,9 @@ function enableScroll() {
       yPercent: -20,
       stagger: 0.5
     }, '<1')
+    .from('.intro small', {
+      autoAlpha: 0
+    })
     .to('.intro_container-message__1', {
       autoAlpha: 0,
       display: 'none'
@@ -107,6 +111,9 @@ function enableScroll() {
         from: 'random'
       }
     })
+    .from('.challenge small', {
+      autoAlpha: 0
+    })
     .to('.challenge', {
       autoAlpha: 0
     })
@@ -124,6 +131,9 @@ function enableScroll() {
     .to('.motto-message em', {
       color: '#00D15F'
     })
+    .from('.motto small', {
+      autoAlpha: 0
+    }, "<+=0.3")
     .to('.motto', {
       autoAlpha: 0
     })
@@ -146,12 +156,15 @@ function enableScroll() {
     .from('.recover-quote .close', {
       opacity: 0,
       x: -100
-    }, "+=0.1")
+    }, "<+=0.1")
     .from('.recover-quote_message', {
       opacity: 0
     })
     .to('.recover-quote_message em', {
       color: '#00D15F'
+    })
+    .from('.recover small', {
+      autoAlpha: 0
     })
     .to('.recover', {
       autoAlpha: 0
@@ -165,6 +178,9 @@ function enableScroll() {
     .to('.experience-box em', {
       color: '#00D15F'
     }, "<+=0.5")
+    .from('.experience small', {
+      autoAlpha: 0
+    })
     .to('.experience', {
       autoAlpha: 0
     })
@@ -182,6 +198,9 @@ function enableScroll() {
       opacity: 0,
       yPercent: -50
     })
+    .from('.value small', {
+      autoAlpha: 0
+    })
     .to('.value', {
       autoAlpha: 0
     })
@@ -191,6 +210,9 @@ function enableScroll() {
     .to('.roadmap-message_1', {
       autoAlpha: 1
     })
+    .from('.roadmap-message_1 small', {
+      autoAlpha: 0
+    })
     .to('.roadmap-message_1', {
       autoAlpha: 0,
       display: 'none',
@@ -198,6 +220,9 @@ function enableScroll() {
     })
     .to('.roadmap-message_2', {
       autoAlpha: 1
+    })
+    .from('.roadmap-message_2 small', {
+      autoAlpha: 0
     })
     .to('.roadmap', {
       autoAlpha: 0
@@ -219,14 +244,17 @@ function enableScroll() {
       opacity: 0,
       yPercent: 30
     })
+    .from('.promise small', {
+      autoAlpha: 0
+    })
     .to('.promise', {
       autoAlpha: 0
     })
     .to('.resources', {
       autoAlpha: 1
     })
-    .from('.resources-container_txt_1', {
-      autoAlpha: 1
+    .from('.resources-container_txt_1 small', {
+      autoAlpha: 0
     })
     .to('.resources-container_txt_1', {
       autoAlpha: 0,
@@ -234,6 +262,9 @@ function enableScroll() {
     })
     .to('.resources-container_txt_2', {
       autoAlpha: 1
+    })
+    .from('.resources-container_txt_2 small', {
+      autoAlpha: 0
     })
     .to('body', {
       background: '#000'
@@ -261,6 +292,9 @@ function enableScroll() {
     .to('.assure-quote em', {
       color: '#00D15F'
     }, "<+=0.3")
+    .from('.assure small', {
+      autoAlpha: 0
+    })
     .to('.assure', {
       autoAlpha: 0
     })
@@ -279,12 +313,8 @@ function enableScroll() {
     .to('.explore-veritas_txt em', {
       color: '#00D15F'
     }, "<0.3")
-    .to('.explore-veritas', {
-      autoAlpha: 0,
-      display: 'none'
-    })
-    .to('.explore-more', {
-      autoAlpha: 1
+    .from('.explore-veritas small', {
+      autoAlpha: 0
     })
     .to('.explore', {
       autoAlpha: 0
@@ -295,11 +325,17 @@ function enableScroll() {
     .to('.testimonial-block_1', {
       autoAlpha: 1
     })
+    .from('.testimonial-block_1 small', {
+      autoAlpha: 0
+    })
     .to('.testimonial-block_1', {
       autoAlpha: 0
     })
     .to('.testimonial-block_2', {
       autoAlpha: 1
+    })
+    .from('.testimonial-block_2 small', {
+      autoAlpha: 0
     })
     .to('.testimonial', {
       autoAlpha: 0
@@ -316,5 +352,10 @@ function enableScroll() {
     }, {
       autoAlpha: 1,
       xPercent: 0
+    })
+    .fromTo('.trial .blue-button', {
+      autoAlpha: 0
+    }, {
+      autoAlpha: 1
     })
 }

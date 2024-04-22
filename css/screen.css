@@ -525,6 +525,14 @@ section p {
   }
 }
 
+small {
+  color: #00D15F;
+  display: inline-block;
+  font-style: italic;
+  text-align: right;
+  width: 100%;
+}
+
 .blue-button {
   background: #3700FF;
   border-radius: 3px;
@@ -1298,6 +1306,18 @@ section p {
   color: #00D15F;
 }
 
+.promise small {
+  -webkit-transform: translate(-50%, -58%);
+  -moz-transform: translate(-50%, -58%);
+  -ms-transform: translate(-50%, -58%);
+  -o-transform: translate(-50%, -58%);
+  transform: translate(-50%, -58%);
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  width: 45%;
+}
+
 .resources {
   background: url("../images/bg-extraintro.jpg") 25% center/cover no-repeat;
 }
@@ -1565,6 +1585,10 @@ section p {
   font-style: normal;
 }
 
+.explore-veritas small {
+  color: #006b31;
+}
+
 .explore-more {
   visibility: hidden;
 }
@@ -1696,6 +1720,10 @@ section p {
   visibility: hidden;
 }
 
+.testimonial-block_2 small {
+  color: #006b31;
+}
+
 .testimonial-block_txt {
   align-content: flex-start;
   align-items: flex-start;
@@ -1753,10 +1781,12 @@ section p {
 
 .trial-container {
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .trial .blue-button {
   margin-bottom: 20px;
+  margin-right: 30px;
 }
 
 .trial .blue-button {
@@ -1784,7 +1814,7 @@ section p {
 
 @media screen and (min-width: 768px) {
   .trial .blue-button {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -1794,16 +1824,7 @@ section p {
   }
 }
 
-@media screen and (min-width: 1366px) {
-  .trial .blue-button {
-    margin-bottom: 50px;
-  }
-}
-
 @media screen and (min-width: 2000px) {
-  .trial .blue-button {
-    margin-bottom: 60px;
-  }
   .trial-logo {
     width: calc((100% / 12) * 5);
   }
